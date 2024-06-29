@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# True Feedback
 
-## Getting Started
+True Feedback is an anonymous feedback and question-answer platform built with Next.js. It leverages NextAuth.js for authentication and MongoDB for data storage. The platform allows users to provide and receive feedback anonymously, fostering honest and open communication.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Anonymous Feedback:** Users can give and receive feedback without revealing their identity.
+- **Question and Answer:** A Q&A feature that allows users to ask questions and get answers from the community.
+- **Secure Authentication:** NextAuth.js ensures secure user authentication.
+- **Responsive Design:** Built with a modern and responsive UI using Tailwind CSS and Radix UI components.
+- **Email Notifications:** Integrated email notifications for various actions using Resend and React Email.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js
+- **Authentication:** NextAuth.js
+- **Database:** MongoDB
+- **Styling:** Tailwind CSS
+- **Email:** Resend, React Email
+- **Form Handling:** React Hook Form, Zod
+- **Carousel:** Embla Carousel
+- **Date Handling:** Day.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/yourusername/true-feedback.git
+   cd true-feedback
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Set up environment variables:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Create a `.env.local` file in the root directory and add the following environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```env
+   MONGODB_URI=""
+   RESEND_API_KEY=""
+   NEXTAUTH_SECRET=""
+   MAILTRAP_EMAIL=""
+   MAILTRAP_PASSWORD=""
+   GOOGLE_GENERATIVE_AI_API_KEY=""
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+## Dependencies
+
+Here's a list of the main dependencies used in the project:
+
+- **Next.js:** `next`
+- **React:** `react`, `react-dom`
+- **NextAuth.js:** `next-auth`
+- **MongoDB:** `mongoose`
+- **Form Handling:** `react-hook-form`, `@hookform/resolvers`
+- **Validation:** `zod`
+- **Styling:** `tailwindcss-animate`, `tailwind-merge`, `@radix-ui/react-*`
+- **Email:** `nodemailer`, `react-email`, `@react-email/components`
+- **Carousel:** `embla-carousel-react`, `embla-carousel-autoplay`
+- **Date Handling:** `dayjs`
+- **Miscellaneous:** `axios`, `bcryptjs`, `clsx`, `usehooks-ts`, `uuid`
+
+## Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes.
+4. Commit your changes with a descriptive commit message.
+5. Push your branch to your forked repository.
+6. Open a pull request to the main repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+Happy coding!
