@@ -1,4 +1,4 @@
-# True Feedback
+# True Feedback Vault
 
 True Feedback is an anonymous feedback and question-answer platform built with Next.js. It leverages NextAuth.js for authentication and MongoDB for data storage. The platform allows users to provide and receive feedback anonymously, fostering honest and open communication.
 
